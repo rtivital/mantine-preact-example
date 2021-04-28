@@ -1,5 +1,9 @@
 export default {
-  webpack(config) {
+  webpack(config, env) {
+    if (env.production) {
+      config.output.publicPath = "/mantine-preact-example";
+    }
+
     config.resolve = {
       ...config.resolve,
       alias: {
