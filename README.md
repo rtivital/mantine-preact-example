@@ -1,22 +1,7 @@
-# preact-mantine-demo
+# Mantine + Preact
 
-## CLI Commands
+This repository is an example integration [mantine](https://mantine.dev) and [preact](https://preactjs.com/).
 
-``` bash
-# install dependencies
-npm install
+See [mantine + preact guide](https://mantine.dev/guides/preact) on mantine docs website.
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# test the production build locally
-npm run serve
-
-# run tests with jest and enzyme
-npm run test
-```
-
-For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
+[View deployed application](https://mantinedev.github.io/mantine-preact-example/)
