@@ -29,9 +29,9 @@
     "sirv-cli": "1.0.3"
   },
   "dependencies": {
-    "@mantine/core": "0.6.1",
-    "@mantine/hooks": "0.6.1",
-    "@mantine/notifications": "0.6.1",
+    "@mantine/core": "2.0.2",
+    "@mantine/hooks": "2.0.2",
+    "@mantine/notifications": "2.0.2",
     "@modulz/radix-icons": "^4.0.0",
     "preact": "^10.3.2",
     "preact-compat": "^3.19.0",

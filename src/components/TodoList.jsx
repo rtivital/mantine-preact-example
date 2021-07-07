@@ -1,7 +1,6 @@
 import { h } from "preact";
 import { useState } from "preact/hooks";
-import { nanoid } from "nanoid";
-import { useListState } from "@mantine/hooks";
+import { useListState, randomId } from "@mantine/hooks";
 import { Cross1Icon, PlusIcon } from "@modulz/radix-icons";
 import {
   Title,
@@ -15,24 +14,24 @@ import {
 import Footer from "./Footer";
 
 const INITIAL_STATE = [
-  { value: "Buy 23 RTX 3080 cards", completed: false, key: nanoid() },
-  { value: "Mine Ethereum", completed: false, key: nanoid() },
+  { value: "Buy 23 RTX 3080 cards", completed: false, key: randomId() },
+  { value: "Mine Ethereum", completed: false, key: randomId() },
   {
     value: "Complain about miners on internet to prove innocence",
     completed: false,
-    key: nanoid(),
+    key: randomId(),
   },
   {
     value: "Sell broken cards on ebay to gamers",
     completed: false,
-    key: nanoid(),
+    key: randomId(),
   },
   {
     value: "Spend received money on new video cards",
     completed: false,
-    key: nanoid(),
+    key: randomId(),
   },
-  { value: "Repeat the cycle", completed: false, key: nanoid() },
+  { value: "Repeat the cycle", completed: false, key: randomId() },
 ];
 
 export function TodoList() {
@@ -134,7 +133,7 @@ export function TodoList() {
               handlers.append({
                 value: event.currentTarget.value,
                 completed: false,
-                key: nanoid(),
+                key: randomId(),
               });
               setNewItem("");
             }
